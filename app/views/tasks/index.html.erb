@@ -2,4 +2,9 @@
 
 <% @tasks.each do |task| %>
   <h2><%= link_to task.title, task_path(task) %></h2>
+  <% if task.completed %>
+    <i class="far fa-check-square"></i>
+  <% else %>
+    <i class="fab fa-xbox"></i>
+  <% end %>
 <% end %>
