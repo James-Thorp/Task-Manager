@@ -11,6 +11,9 @@
 //   background-size: 100% 100%;
 
 }
+.margin-top {
+  padding-top: 50px;
+}
 
 .imgs {
     background: url("https://picsum.photos/200/300/?random
@@ -26,8 +29,7 @@
   background-color: rgb(245,245,245);
   height: 100vh;
   max-width: 1280px;
-//   background: url("https://picsum.photos/200/300/?random
-// ");
+  // background: url("./images/background.jpg");
   // background-size: cover;
   // image-rendering: -webkit-optimize-contrast;
 
@@ -46,6 +48,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-size: cover;
 }
 
 .form-style {

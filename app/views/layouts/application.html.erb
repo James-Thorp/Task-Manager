@@ -16,15 +16,27 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
-<body>
+<body style="background-image: url('../assets/images/background.jpg')">
   <nav class="navbar navbar-light bg-light">
     <%= link_to "Homepage", tasks_path, class: "btn btn-primary" %>
     <form class="form-inline">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+    <span class="navbar-text">
+    James' To-Do List
+  </span>
 
   </nav>
   <%= yield %>
+  <footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018
+    <a href="https://github.com/James-Thorp/Task-Manager"> James' To-Do List</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
 </body>
 </html>
