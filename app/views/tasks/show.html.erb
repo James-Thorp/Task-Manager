@@ -1,13 +1,28 @@
+<div class="container">
+  <div class="row text-center">
+    <div class="card imgs">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 <h2><%= @task.title %></h2>
 <% if @task.completed %>
-    <i class="far fa-check-square"></i>
+    <p>Woohoo! all done! <i class="far fa-thumbs-up"></i></p>
   <% else %>
-    <i class="fab fa-xbox"></i>
+    <p>Get it done! <i class="far fa-thumbs-down"></i></p>
   <% end %>
-<div class="btn btn-warning"><%= link_to "Delete", task_path(@task), method: :delete %></div>
-<div class="btn btn-warning"><%= link_to "Edit", edit_path%>
+<br>
+<div class="btn btn-primary"><%= link_to "Delete", task_path(@task), method: :delete, class: "text-color" %></div>
+<br>
+<div class="btn btn-primary"><%= link_to "Edit", edit_path, class: "text-color" %>
   </div>
+  <br>
+<%= link_to "Back to home", tasks_path, class: "btn btn-primary" %>
+</div>
+</div>
 
-<div class="btn btn-warning"><%= link_to "Back to home", tasks_path %> </div>
-
-
+</div>

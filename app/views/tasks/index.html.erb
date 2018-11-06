@@ -1,12 +1,24 @@
-<h1>My Tasks</h1>
+<div class="container">
+<h1 class="text-center">My Tasks</h1>
+<div class="row">
+  <!-- <div class="tasks "> -->
+    <% @tasks.each do |task| %>
+  <div class="col-sm-3">
+      <h2><%= link_to task.title, task_path(task)%></h2>
+    <div class="card imgs">
+    </div>
+      <% if task.completed %>
 
-<% @tasks.each do |task| %>
-  <h2><%= link_to task.title, task_path(task) %></h2>
-  <% if task.completed %>
-    <i class="far fa-check-square"></i>
-  <% else %>
-    <i class="fab fa-xbox"></i>
-  <% end %>
-<% end %>
+        <p>Complete - <i class="far fa-thumbs-up"></i></p>
+      <% else %>
+        <p>Not Complete - <i class="far fa-thumbs-down"></i></p>
+      <% end %>
+  </div>
+    <% end %>
+</div>
 <br>
-<div class="btn btn-warning"><%= link_to "Add Task", tasks_new_path %> </div>
+<div><%= link_to "Add Task", tasks_new_path, class: "btn btn-primary" %> </div>
+</div>
+</div>
+</div>
+

@@ -1,3 +1,62 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  height: 200px;
+//   background: url("https://picsum.photos/200/300/?random
+// ");
+//   background-size: 100% 100%;
+
+}
+
+.imgs {
+    background: url("https://picsum.photos/200/300/?random
+");
+  background-size: 100% 100%;
+}
+.padding-top {
+  margin-top: 10vh;
+}
+
+.container {
+  text-align: center;
+  background-color: rgb(245,245,245);
+  height: 100vh;
+  max-width: 1280px;
+//   background: url("https://picsum.photos/200/300/?random
+// ");
+  // background-size: cover;
+  // image-rendering: -webkit-optimize-contrast;
+
+}
+
+.icons {
+  height: 100px;
+}
+.tasks {
+  display: flex;
+}
+
+.row {
+  justify-content: space-around;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-style {
+  margin: 10px auto;
+  width: 150px;
+}
+
+.text-center {
+  padding-top: 10vh;
+}
+
+.text-color {
+  color: white;
+}
